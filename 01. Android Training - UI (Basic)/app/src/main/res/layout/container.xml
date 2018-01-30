@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/speakerzen" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFEBEE"
+            android:textSize="16sp"
+           android:paddingTop="50dp"
+            android:text="Sign in with Social network" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/btnlinear"
+        android:weightSum="3"
+        android:layout_below="@+id/main"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/imgbtnFacebook"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="#448AFF" />
+        <Button
+            android:id="@+id/imgbtnInstagram"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="#90CAF9" />
+        <Button
+            android:id="@+id/imgbtnSkype"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:background="#0D47A1" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewor"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/btnlinear"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="OR"
+                android:textColor="#FFFFFF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/tvText"
+                android:background="#F5F5F5"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tvText"
+                android:background="#F5F5F5"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineartextview"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/textviewor"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#F5F5F5"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#F5F5F5"
+            android:background="@drawable/roundcorner"
+            android:hint="USERNAME"/>
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="#F5F5F5"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp"
+            android:ems="10"
+            android:background="@drawable/roundcorner"
+            android:hint="PASSWORD" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:id="@+id/signupbutton"
+        android:layout_below="@+id/lineartextview">
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textSize="20dp"
+            android:textColor="#F5F5F5"
+            android:background="#1DE9B6" />
+    </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/signupbutton">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+        android:id="@+id/textView3"
+        android:textColor="#FFEBEE"
+        android:textSize="17sp"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Have An Account?" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textColor="#1DE9B6"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign Up Now" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</RelativeLayout>
